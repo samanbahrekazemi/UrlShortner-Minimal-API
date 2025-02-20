@@ -1,0 +1,19 @@
+@UrlShortner_HostAddress = http://localhost:5256
+
+
+POST {{UrlShortner_HostAddress}}/generate
+Content-Type: application/json
+Accept: application/json
+
+{
+  "originalUrl": "https://github.com/"
+}
+
+###
+GET {{UrlShortner_HostAddress}}/{shortUrl}
+Accept: application/json
+
+
+### Test GET request for the shortened URL
+GET https://localhost:7095/DfxBIP
+Accept: application/json
