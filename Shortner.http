@@ -1,4 +1,4 @@
-@UrlShortner_HostAddress = http://localhost:5256
+@UrlShortner_HostAddress = https://localhost:7095
 
 
 POST {{UrlShortner_HostAddress}}/generate
@@ -13,7 +13,3 @@ Accept: application/json
 GET {{UrlShortner_HostAddress}}/{shortUrl}
 Accept: application/json
 
-
-### Test GET request for the shortened URL
-GET https://localhost:7095/DfxBIP
-Accept: application/json
